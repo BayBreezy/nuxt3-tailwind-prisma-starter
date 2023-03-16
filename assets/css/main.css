@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply block w-full rounded-lg border-gray-300 bg-white px-4 py-3 caret-primary shadow-sm transition focus:border-primary focus:shadow-lg focus:shadow-primary/20 focus:outline-none focus:ring-1 focus:ring-primary  dark:border-gray-700 dark:bg-transparent dark:focus:ring-primary sm:text-sm;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2.5 rounded-lg px-4 py-2.5 text-sm transition active:scale-95;
+  }
+  .btn-primary {
+    @apply bg-primary text-white duration-200 hover:bg-primary-700;
+  }
+  .btn-outline {
+    @apply border bg-transparent dark:border-gray-700/30;
+  }
+  .btn-icon {
+    @apply inline-flex items-center justify-center rounded-lg border border-gray-100 p-2 text-gray-500 active:scale-95 dark:border-gray-700/30 dark:text-gray-400;
+  }
+  .label {
+    @apply mb-1.5 inline-block cursor-pointer text-sm font-medium text-gray-600 dark:text-gray-300;
+  }
+}
+
+/* Tooltip syles --  directives */
+.v-popper__inner {
+  @apply !rounded-lg bg-neutral-800 text-xs !font-light text-white;
+}
+
+/* Transition styles for page */
+
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+.fade-scale-enter-from,
+.fade-scale-leave-to {
+  opacity: 0;
+  transform: scale(0.99);
+}

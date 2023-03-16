@@ -1,0 +1,135 @@
+.dark .dt {
+  @apply rounded-lg;
+  --easy-table-border: 1px solid theme("colors.slate.900");
+  --easy-table-header-font-size: theme("fontSize.sm");
+  --easy-table-header-height: 50px;
+  --easy-table-header-item-padding: 0 15px;
+  --easy-table-header-background-color: theme("colors.dark");
+  --easy-table-header-font-color: theme("colors.slate.500");
+
+  /* Row styles */
+  --easy-table-body-row-height: 50px;
+  --easy-table-body-row-font-size: theme("fontSize.sm");
+  --easy-table-body-row-font-color: theme("colors.slate.300");
+  --easy-table-body-row-background-color: theme("colors.slate.900");
+  --easy-table-body-row-hover-font-color: theme("colors.slate.200");
+  --easy-table-body-row-hover-background-color: theme("colors.slate.800");
+  --easy-table-body-item-padding: 6px 15px;
+  --easy-table-row-border: 1px solid theme("colors.slate.800");
+  --easy-table-body-even-row-font-color: theme("colors.slate.900");
+  --easy-table-body-even-row-background-color: theme("colors.slate.800");
+
+  /* footer */
+  --easy-table-footer-background-color: theme("colors.dark");
+  --easy-table-footer-font-color: theme("colors.slate.400");
+  --easy-table-footer-font-size: theme("fontSize.sm");
+  --easy-table-footer-padding: 27px 15px;
+
+  /* selector */
+  --easy-table-rows-per-page-selector-option-padding: 5px 20px;
+  --easy-table-rows-per-page-selector-z-index: 100;
+
+  /* next buttons */
+  --easy-table-buttons-pagination-border: 1px solid theme("colors.slate.800");
+
+  /* scrollbar */
+  --easy-table-scrollbar-track-color: theme("colors.slate.900");
+  --easy-table-scrollbar-color: transparent;
+  --easy-table-scrollbar-thumb-color: theme("colors.slate.800");
+  --easy-table-scrollbar-corner-color: transparent;
+
+  /* Message */
+  --easy-table-message-font-color: theme("colors.slate.500");
+  --easy-table-message-font-size: 16px;
+  --easy-table-message-padding: 40px 0px 0px 0px;
+
+  /* Loading */
+  --easy-table-loading-mask-background-color: theme("colors.slate.800");
+  --easy-table-loading-mask-opacity: 0.7;
+}
+.dt {
+  @apply rounded-lg;
+  --easy-table-border: 1px solid theme("colors.slate.200");
+  --easy-table-header-font-size: theme("fontSize.sm");
+  --easy-table-header-height: 50px;
+  --easy-table-header-item-padding: 0 15px;
+  --easy-table-header-background-color: theme("colors.slate.50");
+  --easy-table-header-font-color: theme("colors.slate.700");
+
+  /* Row styles */
+  --easy-table-body-row-height: 50px;
+  --easy-table-body-row-font-size: theme("fontSize.sm");
+  --easy-table-body-row-font-color: theme("colors.slate.700");
+  --easy-table-body-row-background-color: white;
+  --easy-table-body-row-hover-font-color: theme("colors.slate.700");
+  --easy-table-body-row-hover-background-color: theme("colors.slate.50");
+  --easy-table-body-item-padding: 6px 15px;
+  --easy-table-row-border: 1px solid theme("colors.slate.200");
+  --easy-table-body-even-row-font-color: theme("colors.slate.700");
+  --easy-table-body-even-row-background-color: theme("colors.slate.50");
+
+  /* footer */
+  --easy-table-footer-background-color: theme("colors.slate.50");
+  --easy-table-footer-font-color: theme("colors.slate.600");
+  --easy-table-footer-font-size: theme("fontSize.sm");
+  --easy-table-footer-padding: 27px 15px;
+
+  /* selector */
+  --easy-table-rows-per-page-selector-option-padding: 5px 20px;
+  --easy-table-rows-per-page-selector-z-index: 100;
+
+  /* next buttons */
+  --easy-table-buttons-pagination-border: 1px solid theme("colors.slate.200");
+
+  /* scrollbar */
+  --easy-table-scrollbar-track-color: theme("colors.slate.50");
+  --easy-table-scrollbar-color: transparent;
+  --easy-table-scrollbar-thumb-color: theme("colors.slate.300");
+  --easy-table-scrollbar-corner-color: transparent;
+
+  /* Message */
+  --easy-table-message-font-color: theme("colors.slate.700");
+  --easy-table-message-font-size: 16px;
+  --easy-table-message-padding: 40px 0px 0px 0px;
+
+  /* Loading */
+  --easy-table-loading-mask-background-color: theme("colors.slate.400");
+  --easy-table-loading-mask-opacity: 0.7;
+}
+
+.vue3-easy-data-table__main {
+  @apply rounded-t-md;
+}
+.vue3-easy-data-table__footer {
+  @apply rounded-b-md;
+}
+
+.dt th {
+  @apply text-sm font-medium;
+}
+.pagination__rows-per-page,
+.pagination__items-index {
+  @apply text-xs  capitalize;
+}
+.dt table tbody tr td {
+  @apply whitespace-nowrap;
+}
+
+.dark .arrow.arrow-right,
+.dark .arrow.arrow-left {
+  border-top: 2px solid theme("colors.slate.600") !important;
+  border-left: 2px solid theme("colors.slate.600") !important;
+}
+.arrow.arrow-right,
+.arrow.arrow-left {
+  border-top: 2px solid theme("colors.slate.400") !important;
+  border-left: 2px solid theme("colors.slate.400") !important;
+}
+
+.dt .buttons-pagination {
+  @apply gap-1;
+}
+.dt .item.button {
+  @apply !rounded-full text-xs;
+  border: 1px solid var(--easy-table-buttons-pagination-border) !important;
+}
